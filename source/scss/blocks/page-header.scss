@@ -26,6 +26,11 @@
   justify-content: space-between;
 }
 
+.body-loaded .page-header__logo {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .page-header__logo {
   @include hover;
   position: relative;
@@ -35,6 +40,9 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  opacity: 0;
+  transform: translateX(-3rem);
+  transition: 0.5s all cubic-bezier(0, 0.91, 0.5, 0.81);
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -169,6 +177,10 @@
     }
   }
 }
+.body-loaded .page-header__menu,
+.body-loaded .page-header__social {
+  opacity: 1;
+}
 
 .page-header__menu {
   font-family: $font-alt;
@@ -177,6 +189,8 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  opacity: 0;
+  transition: 0.6s opacity cubic-bezier(0, 0.91, 0.5, 0.81);
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -291,6 +305,8 @@
 
 .page-header__social {
   margin-left: 4.8rem;
+  opacity: 0;
+  transition: 0.4s opacity cubic-bezier(0, 0.91, 0.5, 0.81) 0.2s;
 
   @media (min-width: $stop-scaling) {
     margin-left: 48px;
