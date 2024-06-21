@@ -37,7 +37,9 @@
   right: 0;
   z-index: 1;
 }
-
+.loaded .screen__footer {
+  transform: translateY(0);
+}
 .screen__footer {
   position: absolute;
   bottom: 0;
@@ -46,6 +48,8 @@
   color: $c-dark;
   background-color: $c-light;
   z-index: 1;
+  transform: translateY(100%);
+  transition: 0.4s transform cubic-bezier(0, 0.91, 0.5, 0.81);
 
   @media (max-width: $tablet) and (orientation: portrait) {
     width: 3.5rem;
@@ -290,7 +294,8 @@
 
 .screen--story {
   background-color: $c-dark;
-  background-image: url("../img/slide1.jpg"), url("../img/slide2.jpg"), url("../img/slide3.jpg"), url("../img/slide4.jpg");
+  background-image: url("../img/slide1.jpg"), url("../img/slide2.jpg"),
+    url("../img/slide3.jpg"), url("../img/slide4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
