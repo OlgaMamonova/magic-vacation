@@ -284,9 +284,11 @@
     }
 
     &.active {
+      color: $c-purple;
       &::after {
         display: block;
-        width: 100%;
+        transform: scaleX(1);
+        background-color: $c-purple;
       }
     }
 
@@ -298,8 +300,6 @@
       &::after {
         transform: scaleX(1);
         background-color: $c-purple;
-        right: 0;
-        left: auto;
       }
     }
   }
