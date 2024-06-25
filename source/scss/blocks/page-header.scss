@@ -284,11 +284,9 @@
     }
 
     &.active {
-      color: $c-purple;
       &::after {
         display: block;
         transform: scaleX(1);
-        background-color: $c-purple;
       }
     }
 
