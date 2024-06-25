@@ -35,7 +35,7 @@
   color: $c-dark;
   border-radius: 50%;
   transform: scale(1);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -241,7 +241,7 @@
   }
 
   &--fb {
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
     svg {
       width: 0.8rem;
       height: 1.7rem;
@@ -254,7 +254,7 @@
   }
 
   &--insta {
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -267,7 +267,7 @@
   }
 
   &--vk {
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
     svg {
       width: 1.7rem;
       height: 1rem;

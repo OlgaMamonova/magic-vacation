@@ -42,7 +42,7 @@
   color: $c-light;
   opacity: 0;
   transform: translateX(-3rem);
-  transition: 0.5s all cubic-bezier(0, 0.91, 0.5, 0.81);
+  transition: 0.5s all cubic-bezier(0.28, 0.79, 0.53, 0.99);
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -190,7 +190,7 @@
   line-height: 1.0418;
   color: $c-light;
   opacity: 0;
-  transition: 0.6s opacity cubic-bezier(0, 0.91, 0.5, 0.81);
+  transition: 0.6s opacity cubic-bezier(0.28, 0.79, 0.53, 0.99);
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -307,7 +307,7 @@
 .page-header__social {
   margin-left: 4.8rem;
   opacity: 0;
-  transition: 0.4s opacity cubic-bezier(0, 0.91, 0.5, 0.81) 0.2s;
+  transition: 0.4s opacity cubic-bezier(0.28, 0.79, 0.53, 0.99) 0.2s;
 
   @media (min-width: $stop-scaling) {
     margin-left: 48px;
